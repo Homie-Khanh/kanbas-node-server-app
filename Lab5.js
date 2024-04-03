@@ -91,7 +91,6 @@ const Lab5 = (app) => {
         assignment.score = newScore;
         res.json(assignment);
     });
-    // ASK TA
     app.get("/a5/assignment/completed/:status", (req, res) => {
         const { status } = req.params;
         assignment.completed = status === "true";
@@ -165,7 +164,6 @@ const Lab5 = (app) => {
         todo.title = title;
         res.json(todos);
     });
-    // ASK TA
     app.get("/a5/todos/:id/completed/:completed", (req, res) => {
         const { id, completed } = req.params;
         const todo = todos.find((t) => t.id === parseInt(id));
