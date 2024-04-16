@@ -16,7 +16,7 @@ mongoose.connect(CONNECTION_STRING, {dbName: 'kanbas'});
 const app = express()
 app.use(cors({
     credentials: true,
-    origin: process.env.FRONTEND_URL,
+    origin: 'https://a6--vermillion-unicorn-c2baff.netlify.app',
 }));
 const sessionOptions = {
     secret: process.env.SESSION_SECRET,
