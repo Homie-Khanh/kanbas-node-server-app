@@ -3,7 +3,7 @@ import cors from "cors";
 import mongoose from "mongoose";
 import "dotenv/config";
 import session from "express-session";
-import UserRoutes from './Kanbas/users/routes.js';
+import UserRoutes from './Kanbas/Users/routes.js';
 import Hello from "./Hello.js";
 import Lab5 from "./Lab5.js";
 import CourseRoutes from "./Kanbas/courses/routes.js";
